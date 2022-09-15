@@ -13,11 +13,11 @@ def create_dir(path):
         os.makedirs(path)
 
 # Load a document
-book_name = "新にほんご500問　N2"
+book_name = "新完全マスター文法日本語能力試験N2"
 filepath = os.path.join("..","..","data","books", book_name + ".pdf")
 pdf = pdfium.PdfDocument(filepath)
 
-save_dir = os.path.join("..","..","data","book_images", book_name)
+save_dir = os.path.join("..","..","data",book_name,"book_images" )
 
 create_dir(save_dir)
 
